@@ -1,0 +1,93 @@
+body{
+    background-color: #20776c;
+    padding: 0px 10px;
+}
+.logo{
+    text-align: center;
+
+}
+
+.logo img{
+    height: 20em;
+width: 29em;
+margin-top: -100px;
+margin-bottom: -45px;
+}
+
+.container{
+    border: 10px solid white;
+    background-color: #fff;
+}
+.emailContent{
+}
+
+footer{
+    text-align: center;
+}
+p{
+    padding: 0px 20px
+}
+
+/* desktop first approach = (the website was built initialy for desktop and will be adapted for mobiles)
+Even if this approach requires more work in the long run, it is used often in order to develop and Minimum Voable Product with the least amount of initial investment
+*/
+
+
+/*ipad lanscape / small laptop*/
+
+@media only screen and (max-width: 1024px) {
+    /* acting like an IF statement, the media query is a set of conditions in which the containing css will be applied
+    for example the statament above says: IF the media on which this CSS is going to used is SCREEN (Mobiles, Tables, Laptops, Desktops or Projectors) and the maximum resolution of that device is 1024px, THEN apply the body color blue for all the text
+    */
+}
+
+
+/*ipad potrait*/
+
+@media only screen and (max-width: 768px) {
+    .navBar {
+        color: blue;
+        line-height: 2rem;
+        letter-spacing: .10rem;
+        margin-bottom: 0px;
+        font-size: 1em;
+    }
+    .container-carousel {
+        height: 400px;
+        width: 100%;
+    }
+    .container {
+        padding-bottom: 2rem;
+    }
+    .footer-icons {
+        font-size: 0.4rem;
+    }
+    ul li {
+        margin-right: 10px;
+    }
+    .followUs {
+        padding-top: 10px;
+    }
+    html {
+        margin-bottom: 45%
+    }
+}
+
+
+/*iPhone landscape*/
+
+@media only screen and (max-width: 480px) {
+
+}
+
+
+/*iPhone portrait*/
+
+@media only screen and (max-width: 320px) {
+.logo img {
+    height: 20em;
+width: 29em;
+margin-top: -100px;
+margin-bottom: -80px;
+}
+}
